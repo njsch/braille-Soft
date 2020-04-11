@@ -25,11 +25,13 @@ def bet():
 def game(bet):
 	totalUserMoney = 30000
 	userScore = 0
-	while True: 
-		userCard1 =  random.randint(1,10)
+	while True:
+		userCard1 = random.randint(1,10)
 		userCard2 = random.randint(1,10)
-		totalUserScore = userCard1+userCard2 
-		print(totalUserScore)
+		userScore = userCard1+userCard2
+		print(userScore)
+
+
 		break
 
 main()
