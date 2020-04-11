@@ -26,8 +26,9 @@ def game(bet):
 	totalUserMoney = 30000
 	userScore = 0
 	while True: 
-		userCard =  random.randint(1,10)
-		totalUserScore = userScore+1
+		userCard1 =  random.randint(1,10)
+		userCard2 = random.randint(1,10)
+		totalUserScore = userCard1+userCard2 
 		print(totalUserScore)
 		break
 
