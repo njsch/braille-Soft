@@ -1,36 +1,30 @@
 import random
 
-def main():
-	bet()
+totalUserMoney = 30000
+while True:
+	print("Welcome to BlackJak!\n")
+	print("you have","$",totalUserMoney,"\n")
+	bet = int(input("How much is your wager?\n"))
 
-def bet():
-	totalUserMoney = 30000
-	while True:
-		print("Welcome to BlackJak!\n")
-		print("you have","$",totalUserMoney,"\n")
-		bet = int(input("How much is your wager?\n"))
+	if bet < 0:
+		print("Your bet needs to be more than 0.\n")
 
-		if bet < 0:
-			print("Your bet needs to be more than 0.\n")
+	elif bet > totalUserMoney:
+		print("COME ON NOW! YOU DON'T HAVE THAT MUCH MONEY!\n")
 
-		elif bet > totalUserMoney:
-			print("COME ON NOW! YOU DON'T HAVE THAT MUCH MONEY!\n")
-
-		elif bet == 0:
-			print("DON'T BE A WISE ASS!\n")
-		else:
-			game(bet)
+	elif bet == 0:
+		print("DON'T BE A WISE ASS!\n")
 
 
-def game(bet):
-	userScore = 0
-	while True:
-		userCard1 = random.randint(1,10)
-		userCard2 = random.randint(1,10)
-		userScore = userCard1+userCard2
-		print(userScore)
-
-
+	card = 0
+	while card < 21:
+		finalUser =2
+		card = random.randint(1,10)
+		user = card
+		user += card
+		print(user)
+	if user == "21":
+		print("cool")
 		break
 
-main()
+game()
