@@ -4,6 +4,5 @@ def main():
 	while True:
 		print("Welcome to BlackJak!")
 		bet = int(input("How much is your wager?"))
-
 		break
 main()
