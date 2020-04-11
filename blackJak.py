@@ -10,12 +10,16 @@ def main():
 		print("you have","$",totalUserMoney,"\n")
 		bet = int(input("How much is your wager?\n"))
 
+
 		if bet < 0:
 			print("Your bet needs to be more than 0.\n")
 
 		elif bet == 0:
 			print("DON'T BE A WISE ASS!\n")
-		break
+			break
+		else:
+			userCard = random.randint(1,7)
+			print(userCard)
 
 
 
