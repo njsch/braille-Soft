@@ -23,7 +23,6 @@ def bet():
 
 
 def game(bet):
-	totalUserMoney = 30000
 	userScore = 0
 	while True:
 		userCard1 = random.randint(1,10)
