@@ -14,8 +14,12 @@ def main():
 		if bet < 0:
 			print("Your bet needs to be more than 0.\n")
 
+		elif bet > totalUserMoney:
+			print("COME ON NOW! YOU DON'T HAVE THAT MUCH MONEY!\n")
+
 		elif bet == 0:
 			print("DON'T BE A WISE ASS!\n")
+
 		else:
 			userCard = random.randint(1,7)
 			print(userCard)
