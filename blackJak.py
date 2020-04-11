@@ -16,10 +16,10 @@ def main():
 
 		elif bet == 0:
 			print("DON'T BE A WISE ASS!\n")
-			break
 		else:
 			userCard = random.randint(1,7)
 			print(userCard)
+			break
 
 
 
