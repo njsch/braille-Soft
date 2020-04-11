@@ -6,6 +6,10 @@ def main():
 	while True:
 		print("Welcome to BlackJak!\n")
 		bet = int(input("How much is your wager?\n"))
+		print("Welcome to BlackJak!")
+		bet = int(input("How much is your wager?"))
+		if bet < 0:
+			print("Your bet needs to be more than 0.\n")
 		break
 
 
