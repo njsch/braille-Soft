@@ -11,7 +11,6 @@ def main():
 		dn = 0
 		un = 0
 		bet = 0
-		line = 1
 		while line == 1:
 			print("\nYou have $" + str(money) + ".00.\n")
 			bet = int(input("How much is your wager?\n"))
