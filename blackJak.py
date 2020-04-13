@@ -11,7 +11,7 @@ def main():
 		bet = 0
 		while line == 1:
 			print("\nYou have $" + str(money) + ".00.\n")
-			bet = input("How much is your wager?\n")
+			bet = int(input("How much is your wager?\n"))
 			line = 2
 			break
 		while line == 2:
