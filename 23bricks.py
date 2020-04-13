@@ -24,18 +24,10 @@ while message.upper() == "Y" or message.upper() == "N":
 				print("You take",bricksInput,"leaving",bricks)
 
 				computerBricksInput = random.randint(1,3)
-				print("There are",bricks,"remaining\n")
 				bricks -= computerBricksInput
-				print("I take",computerBricksInput,"leaving",bricks)
+			if bricks ==  3:
+				computerBricksInput = random.randint(1,2)
+			elif bricks == 2:
+				computerBricksInput = random.randint(1)
 
 
-			if bricks == 0:				break
-				print("Sorry, you took the last brick and lost!\n")
-			else:
-				print("All right! So you beat me this time.\n")
-
-				playAgain = input("Do you want to play again? Type Y for Yes or N for No.\n")
-				if playAgain == "Y":
-					continue
-				if playAgain == "N":
-					break
