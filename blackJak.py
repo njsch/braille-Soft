@@ -99,6 +99,7 @@ def main():
 					print("Sorry, you lost all your money and you are now out of the game.\n")
 					print("Better luck next time!\n")
 					playing = False
+					break
 				print("The Dealer wins!\n")
 				line = 7
 				break
@@ -111,6 +112,7 @@ def main():
 			key = input("Do you want to play again? Type Y for Yes or N for No.\n")
 			if key.upper() == "N":
 				playing = False
+				break
 			elif key.upper() == "Y":
 				line = 1
 				break
