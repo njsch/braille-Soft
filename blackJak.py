@@ -13,9 +13,13 @@ def main():
 		bet = 0
 		while line == 1:
 			print("\nYou have $" + str(money) + ".00.\n")
-			bet = int(input("How much is your wager?\n"))
-			line = 2
-			break
+			betstr = input("How much is your wager?\n")
+			try:
+				bet = int(betstr)
+				line = 2
+				break
+			except ValueError:
+				print("SYNTAX ERROR! JUST ENTER A NUMBER!\n")
 		while line == 2:
 			if bet == 0:
 				print("DON'T BE A WISE ASS!\n")
