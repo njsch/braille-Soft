@@ -13,11 +13,12 @@ def main():
 		bet = 0
 		while line == 1:
 			print("\nYou have $" + str(money) + ".00.\n")
-			betstr = input("How much is your wager?\n")
 			try:
-				bet = int(betstr)
+				bet = int(input("How much is your wager?\n"))
 				line = 2
 				break
+			except EOFError:
+				print("Please don't terminate your input with a CONTROL-Z character.\n")
 			except ValueError:
 				print("SYNTAX ERROR! JUST ENTER A NUMBER!\n")
 		while line == 2:
