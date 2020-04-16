@@ -1,7 +1,8 @@
 import random
 def main():
+	print("Hi! Let's play a game of twenty-three bricks.")
 	while True:
-		print("Hi! Let's play a game of twenty-three bricks.")
+
 		break
 
 	message = input("Do you need instructions? Type Y for Yes or N for No.\n")
